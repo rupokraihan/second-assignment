@@ -1,0 +1,358 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* ------------------------
+Common Styles
+-------------------------- */
+.main-title{
+    font-weight: 700;
+    font-size: 45px;
+    color: #131313;
+    margin-bottom: 20px;
+}
+.primary-text{
+    font-weight: 400;
+    font-size: 16px;
+    color: #727272;
+
+}
+.primary-button{
+    width: 180px;
+    height: 64px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #FFFFFF;
+    background: #FF900E;
+    border-radius: 8px;
+    border: 0;
+    margin-top: 32px;
+
+}
+
+
+/*------------------------- 
+Section
+--------------------------- */
+header{
+    background-color: rgba(255, 144, 14, 0.1);
+    width: 100%;
+    max-height: 1412px;
+    padding-bottom: 50px;
+}
+
+/* ------------------------
+Nav bar Section
+--------------------------- */
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1350px;
+    width: 100%;
+    align-items: center;
+    margin: 0 auto;
+    padding: 50px 25px;
+}
+.nav-bar ul{
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    font-weight: 500;
+    font-size: 18px;
+    color: #424242;
+}
+.nav-bar ul a{
+    text-decoration: none;
+    color: black;
+}
+
+/* ----------------------------
+title-banner-section
+-------------------------------- */
+.title-banner-section{
+    text-align: center;
+}
+
+.header-title{
+    font-weight: 700;
+    font-size: 64px;
+    color: #131313;
+    margin: 30px 0;
+}
+
+/* banner image */
+
+.title-banner-section img{
+    width: 90%;
+    margin-top: 50px;
+}
+
+/* -------------------------------
+For Main Section
+--------------------------------- */
+.container-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1320px;
+    width: 100%;
+    max-height: 710px;
+    margin: 0 auto;
+    margin-top: 85px;
+    gap: 75px;   
+}
+
+.container-image{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 24px;    
+}
+.container-title{
+    font-weight: 500;
+    font-size: 45px;
+    color: #727272;
+}
+.container-color-title{
+    font-weight: 700;
+    font-size: 45px;
+    color: #FF900E;
+}
+.container-text{
+    font-weight: 400;
+    font-size: 16px;
+    color: #727272;
+    margin-top: 25px;
+}
+
+
+/* -----------------------------
+experience-section
+------------------------------ */
+.experience-section{
+    display: flex;
+    max-width: 1440px;
+    width: 100%;
+    max-height: 1059px;
+    height: auto;
+    margin: 0 auto;
+    gap: 180px;
+    margin-top: 160px;
+}
+/* .experience-container{
+    max-width: 586px;
+    max-height: 982px;
+    width: 100%;
+} */
+.line-title{
+    display: flex;
+    margin-bottom: 0px;
+    
+
+}
+.line{
+    width: 5px;
+    height: 146px;
+    background: #FF900E;
+    display: block;
+    margin-top: 32px;
+    margin-right: 28px;
+
+}
+.benefits{
+    width: 586px;
+    height: 150px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    margin-top: 20px;
+    padding: 0 20px;
+    padding-top: 10px;
+}
+.benefits-header{
+    margin-top: 20px;
+
+}
+.facts{
+    margin-left: 230px;
+    margin-top: 150px;
+}
+.service{
+    display: flex;
+    justify-content:center;
+    gap: 125px;
+    margin-top: 110px;
+}
+
+.service-box{
+    width: 241.83px;
+    height: 241.83px;
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.number{
+    padding: 15px 0;
+    font-weight: 600;
+    font-size: 45px;
+    color: #424242;
+}
+.result{
+    font-weight: 600;
+    font-size: 20px;
+    color: #727272;
+}
+.sponsor{
+    text-align: center;
+    margin-top: 150px;
+}
+.logo-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 60px;
+}
+.logo-container img{
+    filter: grayscale(1);
+}
+.contract{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    margin-top: 100px;
+}
+.adress{
+
+}
+.contract-image{
+    border-radius: 15px;
+
+}
+.footer{
+    display: flex;
+    max-width: 1440px;
+    width: 100%;
+    height: 80px;
+    background: #FFF4E7;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    margin: 100px auto;
+}
+.footer p{
+    font-weight: 400;
+    font-size: 22px;
+    color: #424242;;
+}
+.footer-logo{
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    font-size: 1.5rem;
+}
+
+
+
+
+
+
+@media only screen and (max-width:650px) {
+    .nav-bar{
+        flex-direction: column;
+    }
+    .nav-bar ul{
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 20px;
+    }
+    .container-image{
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 24px;    
+    }
+    
+    .container-section{
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 85px;
+    gap: 75px;   
+    }
+    .container-details{
+        text-align: center;
+    }
+
+    /* experience section */
+    .experience-section{
+        flex-direction: column;
+        max-height: auto;
+        margin: 0 auto;
+        justify-content: start;
+        align-items: center;
+        margin-top: 1250px;
+        padding: 0px;
+    }
+
+    .benefits{
+        margin: 0 auto;
+        width: 100%;
+        height: auto;
+        padding: 0 20px;
+        padding-top: 10px;
+        margin-top: 20px;
+}
+
+/* .experience-container{
+    max-width: 586px;
+    max-height: 982px;
+    width: 100%;
+    display: block;
+} */
+
+    .benefits-image{
+        display: none;
+   
+}
+
+.line{
+    width: 5px;
+    height: 295px;
+    background: #FF900E;
+    display: block;
+    margin-top: 32px;
+    margin-right: 28px;
+
+}
+
+.facts{
+    margin-left: 10px;
+    margin-top: 100px;
+}
+
+.service{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 110px;
+}
+.service-box{
+    width: 100%;
+}
+.logo-container{
+    flex-direction: column;
+    margin-bottom: 20px;   
+}
+.logo-container img{
+    height: 40px;
+    margin-bottom: 25px;
+}
+
+
+}
