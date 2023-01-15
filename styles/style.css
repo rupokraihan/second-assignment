@@ -292,6 +292,8 @@ Experience-section
 
 
 
+
+/* for responsive */
 @media only screen and (max-width:650px) {
 /* For Nav bar Section */
     .nav-bar{
