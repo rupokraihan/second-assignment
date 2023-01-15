@@ -18,7 +18,6 @@ Common Styles
     font-weight: 400;
     font-size: 16px;
     color: #727272;
-
 }
 .primary-button{
     width: 180px;
@@ -30,10 +29,7 @@ Common Styles
     border-radius: 8px;
     border: 0;
     margin-top: 32px;
-
 }
-
-
 /*------------------------- 
 Section
 --------------------------- */
@@ -43,9 +39,8 @@ header{
     max-height: 1412px;
     padding-bottom: 50px;
 }
-
 /* ------------------------
-Nav bar Section
+For Nav bar Section
 --------------------------- */
 .nav-bar{
     display: flex;
@@ -75,21 +70,18 @@ title-banner-section
 .title-banner-section{
     text-align: center;
 }
-
 .header-title{
     font-weight: 700;
     font-size: 64px;
     color: #131313;
     margin: 30px 0;
 }
-
 /* banner image */
 
 .title-banner-section img{
     width: 90%;
     margin-top: 50px;
 }
-
 /* -------------------------------
 For Main Section
 --------------------------------- */
@@ -110,6 +102,7 @@ For Main Section
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 24px;    
 }
+/*For Container Title and text */
 .container-title{
     font-weight: 500;
     font-size: 45px;
@@ -129,40 +122,34 @@ For Main Section
 
 
 /* -----------------------------
-experience-section
+Experience-section
 ------------------------------ */
 .experience-section{
-    display: flex;
     max-width: 1440px;
     width: 100%;
-    max-height: 1059px;
+    height: 1059px;
     height: auto;
     margin: 0 auto;
-    gap: 180px;
+    gap: 30px;
     margin-top: 160px;
 }
-/* .experience-container{
-    max-width: 586px;
-    max-height: 982px;
-    width: 100%;
-} */
+.experince{
+    display: flex;
+    gap: 190px;
+}
+.experience-container, .experience-text{
+    margin-left: 25px;
+ }
+.benefits-image{
+    max-width: 900px;
+    height: 1050px;
+}
 .line-title{
     display: flex;
     margin-bottom: 0px;
-    
-
-}
-.line{
-    width: 5px;
-    height: 146px;
-    background: #FF900E;
-    display: block;
-    margin-top: 32px;
-    margin-right: 28px;
-
 }
 .benefits{
-    width: 586px;
+    max-width: 586px;
     height: 150px;
     background: #FFFFFF;
     box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
@@ -173,19 +160,52 @@ experience-section
 }
 .benefits-header{
     margin-top: 20px;
-
 }
+
+/* For title right side line */
+.line{
+    width: 5px;
+    height: 146px;
+    background: #FF900E;
+    display: block;
+    margin-top: 32px;
+    margin-right: 28px;
+}
+/* For image bottom box */
+.box{
+    width: 342px;
+    height: 200px;
+    background-color: #FF900E;
+    border-radius: 8px;
+    text-align: center;
+    margin-left: 680px;
+    margin-top: -180px;
+    position: relative;
+}
+.box h1{
+    font-weight: 700;
+    font-size: 65px;
+    color: #FFFFFF;
+    padding: 30px 0 10px 0;
+}
+.box h4{
+    font-weight: 500;
+    font-size: 25px;
+    color: #FFFFFF;   
+}
+/* For Some Facts title and text */
 .facts{
     margin-left: 230px;
     margin-top: 150px;
 }
+/* Service section and award wining */
 .service{
     display: flex;
     justify-content:center;
     gap: 125px;
     margin-top: 110px;
 }
-
+/* for box */
 .service-box{
     width: 241.83px;
     height: 241.83px;
@@ -195,23 +215,33 @@ experience-section
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
+/* For hover and transition */
+.service-box:hover{
+    letter-spacing: 0.20em;
+    background-color: rgba(233, 149, 241, 0.541);
+    transition:2s;
+    box-shadow: 0px 4px 30px rgba(231, 12, 12, 0.959);
+}
+/* box number */
 .number{
     padding: 15px 0;
     font-weight: 600;
     font-size: 45px;
     color: #424242;
 }
+/* for box text */
 .result{
     font-weight: 600;
     font-size: 20px;
     color: #727272;
 }
+/* Sponsor section */
 .sponsor{
     text-align: center;
     margin-top: 150px;
 }
+/* logo */
 .logo-container{
     display: flex;
     justify-content: space-evenly;
@@ -221,6 +251,7 @@ experience-section
 .logo-container img{
     filter: grayscale(1);
 }
+/* Contract and address section */
 .contract{
     display: flex;
     justify-content: center;
@@ -228,13 +259,11 @@ experience-section
     gap: 150px;
     margin-top: 100px;
 }
-.adress{
-
-}
+/* Building image  */
 .contract-image{
     border-radius: 15px;
-
 }
+/* footer section */
 .footer{
     display: flex;
     max-width: 1440px;
@@ -309,17 +338,26 @@ experience-section
         margin-top: 20px;
 }
 
-/* .experience-container{
-    max-width: 586px;
-    max-height: 982px;
-    width: 100%;
-    display: block;
-} */
+ .experience-container{
+    display: flex;
+    flex-direction: column;
+ }
+ .experience-container, .experience-text{
+    margin-left: 15px;
+ }
+.experince{
+    flex-direction: column;
+}
 
     .benefits-image{
         display: none;
+        
    
 }
+.box{
+    display: none;
+}
+
 
 .line{
     width: 5px;
@@ -337,22 +375,34 @@ experience-section
 }
 
 .service{
-    display: flex;
     flex-direction: column;
     gap: 25px;
-    margin-top: 110px;
+    justify-content: center;
+    align-items: center;
 }
 .service-box{
-    width: 100%;
+    width: 70%;
 }
 .logo-container{
     flex-direction: column;
-    margin-bottom: 20px;   
+    margin-bottom: 20px; 
+    align-items: center; 
 }
 .logo-container img{
     height: 40px;
-    margin-bottom: 25px;
+    margin-bottom: 45px;
+    width: 60%;
+    
 }
-
-
+.contract{
+    flex-direction: column;
+    text-align: center;
+}
+.footer-logo{
+    justify-content: center;
+}
+.contract-image{
+    width: 90%;
+    margin-top: -100px;
+}
 }
